@@ -32,9 +32,13 @@ This repository contains solutions for two classic Artificial Intelligence probl
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Terminator-maker/ai-rubik-genetic-algorithm.git](https://github.com/Terminator-maker/ai-rubik-genetic-algorithm.git)
-   cd ai-rubik-genetic-algorithm
+   git clone [https://github.com/Terminator-maker/AI-Problem-Solving-2D-Rubik-s-Cube-Genetic-Algorithm.git](https://github.com/Terminator-maker/AI-Problem-Solving-2D-Rubik-s-Cube-Genetic-Algorithm.git)
+   cd AI-Problem-Solving-2D-Rubik-s-Cube-Genetic-Algorithm
+Install dependencies:
 
+Bash
+pip install -r requirements.txt
+Run the scripts or Jupyter Notebooks included in the repository.
 files:
 1.Document (format: pdf)
 2.Code - PDF - Google Colab
