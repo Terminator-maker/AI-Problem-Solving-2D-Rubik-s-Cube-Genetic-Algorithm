@@ -1,30 +1,39 @@
-# 🏠 Advanced Modeling of Tehran Housing Prices using Machine Learning
+# 🧬 AI Problem Solving: 2D Rubik's Cube & Genetic Algorithm
 
-A comprehensive machine learning project and critical review of housing price prediction models in Tehran, leveraging both regression and classification techniques.
+This repository contains solutions for two classic Artificial Intelligence problems, implemented as part of the AI course at the **University of Science and Culture** under the supervision of Dr. Azadeh Tabatabaei.
 
-## 📊 Project Overview
-This project analyzes a real-world dataset of residential properties across Tehran to predict housing values. It implements and compares multiple machine learning algorithms, evaluates their limitations (such as linear assumptions and non-standard metrics), and proposes methodological enhancements like **Polynomial Regression** and **Price Tier Classification**.
+---
 
-## 🛠️ Tech Stack & Libraries
+## 🧩 Project Breakdown
+
+### 1. 2D Rubik's Cube Solver (Heuristic Search)
+* **Problem Description:** A 2D Rubik's cube grid with randomly arranged numbers that must be sorted in ascending order using the minimum number of cyclic row or column shifts[cite: 16].
+* **Approach & Implementation:** 
+  * Utilized a double-ended queue (`deque`) to manage states efficiently[cite: 19].
+  * Implemented and compared two heuristic functions[cite: 18]:
+    1. Counting the number of unsorted rows.
+    2. Calculating the sum of Manhattan distances for each element to its correct target position.
+
+### 2. Linear Equation Optimization (Genetic Algorithm)
+* **Problem Description:** Optimizing the weight coefficients ($w$) of a linear equation ($y = w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4$) to maximize the output $y$ towards a target value[cite: 17, 20].
+* **Approach & Implementation:**
+  * **Population & Fitness:** Generated initial random population and evaluated solutions using a customized fitness function[cite: 20].
+  * **Evolution Operators:** Implemented parent selection, crossover (gene recombination), and mutation (with probability adjustments)[cite: 20, 21].
+  * **Visualization:** Tracked performance across iterations and generated comparative charts using `Matplotlib` and `Pandas`[cite: 18, 23].
+
+---
+
+## 🛠️ Tech Stack
 * **Python**
-* **Scikit-Learn** (Lasso, Elastic Net, Kernel Ridge, Random Forest, Logistic Regression)
-* **XGBoost** (Extreme Gradient Boosting)
-* **Pandas & NumPy** (Data Preprocessing & Manipulation)
-* **Matplotlib & Seaborn** (Data Visualization & Heatmaps)
-
-## 🔍 Key Models & Findings
-1. **Lasso Regression:** Chosen in the original study for its interpretability and formula simplicity, though it suffers from linearity bias in luxury markets[cite: 29, 31, 38].
-2. **Kernel Ridge & Gradient Boosting:** Captured non-linear price patterns more effectively[cite: 34, 35, 38].
-3. **XGBoost:** Achieved the highest predictive accuracy by capturing complex feature-neighborhood interactions[cite: 36, 38].
-4. **Proposed Improvements:**
-   * **Polynomial Regression:** To better model the exponential price surge in luxury homes[cite: 40].
-   * **Price Tier Classification:** Converting exact price prediction into robust categories (*Affordable, Moderate, Luxury*) to handle economic volatility[cite: 42].
+* **NumPy & Pandas** (Data manipulation and structuring)
+* **Matplotlib** (Algorithm performance and iteration plotting)
+* **Collections (deque)** (State graph traversal)
 
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Terminator-maker/tehran-housing-ml-modeling.git](https://github.com/Terminator-maker/tehran-housing-ml-modeling.git)
-   cd tehran-housing-ml-modeling
+   git clone [https://github.com/Terminator-maker/ai-rubik-genetic-algorithm.git](https://github.com/Terminator-maker/ai-rubik-genetic-algorithm.git)
+   cd ai-rubik-genetic-algorithm
 
 files:
 1.Document (format: pdf)
